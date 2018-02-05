@@ -8,6 +8,6 @@ class RefrigeController < ApplicationController
 
 
   def interface2
-  	render('interface2')
+  	redirect_to('locahost:3000/posts')
   end
 end
