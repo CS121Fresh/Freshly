@@ -11,18 +11,18 @@
     </tr>
   </thead>
 
+  <!-- Sort all the posts  -->
   <tbody>
-    <% @posts.each do |post| %>
+    <% @posts.sort_by{|post| post.Expiration}.each do |post| %>
       <tr>
         <td><%= post.Item %></td>
         <td><%= post.Expiration%></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </tr>
     <% end %>
-  </tbody>
-</table>
+  <tbody>
 
 <br>
 
