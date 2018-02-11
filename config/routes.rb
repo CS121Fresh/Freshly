@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   root 'refrige#interface1'
 
   get 'refrige/interface1'
-  get 'refrige/interface2'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
