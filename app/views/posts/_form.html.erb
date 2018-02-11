@@ -11,23 +11,18 @@
     </div>
   <% end %>
 
-
   <div class="field">
     <%= form.label :Item %>
     <%= form.text_field :Item, id: :post_Item %>
   </div>
 
   <div class="field">
-    <%= form.label :Expiration_Date%>
-    <%= form.text_field :Expiration_Date, id: :post_Expiration_Date %>
+    <%= form.label :Expiration %>
+    <%= form.text_field :Expiration, id: :post_Expiration %>
   </div>
 
-  <div class="field">
-    <%= form.label :Description %>
-    <%= form.text_area :Description, id: :post_Description %>
-  </div>
 
   <div class="actions">
-    <%= form.submit "Add"%>
+    <%= form.submit %>
   </div>
 <% end %>
