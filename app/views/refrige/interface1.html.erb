@@ -1,6 +1,15 @@
-<h1>Welcome to our Page</h1>
-<p>This is the main page, with the list being printed out,
-	corresponding to the interface 1 in interfaces channel in slack </p>
+<b><i><h1 style="color:#057748"; align="center">Welcome to Freshly !</h1></i></b>
 
-<a href= "posts/new">Add your food here</a>
-<%#link_to ('Add your food here', {:action => 'interface2 '}) %> <br />
+<DIV align="center">
+	<p style="color:#21a675";align="center">
+  	“Freshly” is a web page that can track and manage your
+  	food inventory in your home to save your money and cut food
+  	waste! </p>
+	<p style="color:#21a675";align="center">
+		With a list of your food along with their expiration dates
+		chronologically displayed, you can easily check what food you
+		have left, which you should consume first and reduce food waste. </p>
+	<%= link_to 'Add Items Here', new_post_path %> <br />
+
+	<%= link_to 'View Your List', posts_path %>
+</DIV>

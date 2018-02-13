@@ -1,31 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<b><h1 style="color:#057748">Your List</h1></b>
 
 <table>
   <thead>
     <tr>
       <th>Item</th>
       <th>Expiration</th>
-      <th>Date</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
+  <!-- Sort all the posts  -->
   <tbody>
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.Item %></td>
-        <td><%= post.Expiration %></td>
-        <td><%= post.Date %></td>
+        <td><%= post.Expiration%></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </tr>
     <% end %>
-  </tbody>
-</table>
+  <tbody>
+<table>
 
 <br>
 
-<%= link_to 'Add your item Here', new_post_path %>
+<%= link_to 'Add a New Item', new_post_path %>
