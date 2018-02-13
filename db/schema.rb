@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20180204223226) do
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "Item"
-    t.string "Expiration"
-    t.text "Date"
+    t.Date "Expiration", null: false
+    t.text "Description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
