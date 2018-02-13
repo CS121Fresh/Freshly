@@ -31,12 +31,13 @@ Our MVP allows users to add food items along with its expiration date to the foo
 
 **Feature 3**：Display all items users previously entered in a list sorted by expiration date in a chronological order.
 
-![alt text](images/sortedList.png)
+![](images/sortedList.png)
 
 *Food List*
 
 ## installation steps 
 1. Clone from github.
+
 2. Setup local database 
 `mysql -u root -p`
 `CREATE DATABASE freshly_development`
@@ -44,11 +45,13 @@ Our MVP allows users to add food items along with its expiration date to the foo
 `GRANT ALL PRIVILEGES ON freshly_development.* TO ‘freshly_user’ IDENTIFIED BY ‘freshly’;`
 `GRANT ALL PRIVILEGES ON freshly_test.* TO ‘freshly_user’ IDENTIFIED BY ‘freshly’;`
 `exit`
+
 3. Run `rails server`
 4. Put the localhost address in your browser. (:localhost.3000)
 
 ## issues 
 ### Key issues
+
 1. Problem: We named the parameter denoting the expiration date incorrectly. 
 Solution: We read through our code base and change all of them because Ruby obviously does not allow “_” in the names of such parameters.⋅⋅
 2. Problem: After pulling the initial project frame from github created by one member, we were unable to run the server. 
